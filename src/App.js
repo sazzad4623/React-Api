@@ -9,14 +9,12 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <div>
-          <Switch>
-            <Route path="/" exact component={Main}></Route>
-            <Route path="/posts" component={Posts}></Route>
-            <Route path="/post/:id" exact component={Post}></Route>
-            <Route path="/about" component={About}></Route>
-          </Switch>
-        </div>
+        <Switch>
+          <Route path="/" exact component={Main}></Route>
+          <Route path="/posts" component={Posts}></Route>
+          <Route path="/post/:id" exact component={Post}></Route>
+          <Route path="/about" component={About}></Route>
+        </Switch>
       </Router>
     );
   }
