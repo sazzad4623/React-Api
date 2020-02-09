@@ -18,7 +18,7 @@ class Posts extends Component {
     // fetch(`http://problems.gridstacks.com/wp-json/wp/v2/posts`)
     //   .then(res => res.json())
     //   .then(json => this.setState({ data: json }));
-    fetch(`http://problems.gridstacks.com/wp-json/wp/v2/posts`)
+    fetch(`http://problems.gridstacks.com/wp-json/wp/v2/posts?per_page=25`)
       .then(res => res.json())
       .then(json => {
         this.setState({
